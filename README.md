@@ -31,6 +31,12 @@ The objective of the game is for the player to draw all 5 cards from the deck wi
 3. Run `npm install` to install dependencies.
 4. Run `npm run dev` to start the development server.
 
+## Deploy Link: 
+- [vercel](https://exploding-kittens-psi.vercel.app/)
+
+## Backend Repository
+- Backend repository: [ExplodingKittensBackend](https://github.com/shubham-masai/ExplodingKittensBackend)
+
 ## Dependencies
 - React
 - React DOM
