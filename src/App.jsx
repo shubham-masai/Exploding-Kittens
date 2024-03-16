@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import "./App.css";
 import AllRoutes from "./Components/AllRoutes";
 
