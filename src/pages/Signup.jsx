@@ -3,6 +3,7 @@ import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { bgpicture1 } from "../assets";
 import { handleSignup } from "../redux/User/action";
+import { Link } from "react-router-dom/dist";
 export const SignUp = () => {
     const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
@@ -94,12 +95,12 @@ export const SignUp = () => {
 
                         <p className="text-sm font-light text-gray-600 dark:text-gray-400">
                             Already have an account yet?{" "}
-                            <a
-                                href="/login"
+                            <Link
+                                to={"/login"}
                                 className="font-medium text-primary-600"
                             >
                                 Login
-                            </a>
+                            </Link>
                         </p>
                     </form>
                 </div>
