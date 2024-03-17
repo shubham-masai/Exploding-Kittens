@@ -76,13 +76,11 @@ export const Login = () => {
             >
               Login
             </button>
-
             <p className="text-sm font-light text-gray-600 dark:text-gray-400">
               Don’t have an account yet?{" "}
               <Link
                  to={"/signup"}
-                className="font-medium text-primary-600"
-              >
+                className="font-medium text-primary-600">
                 Sign up
               </Link>
             </p>
