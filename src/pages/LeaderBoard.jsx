@@ -4,14 +4,13 @@ import { getLeaderBoard } from '../redux/User/action';
 
 const LeaderBoard = () => {
     const dispatch = useDispatch();
-    const { allUser } = useSelector((store) => store.userReducer);
+    const { leaderboardData } = useSelector((store) => store.userReducer);
 
     useEffect(() => {
         dispatch(getLeaderBoard());
-    }, []);
+    }, [dispatch]);
 
-    console.log("alluser", allUser);
-
+    console.log(leaderboardData);
     return (
         <div className="leaderboard-container">
             <h1 className='text-[40px] text-center'>Player Rankings</h1>
@@ -23,7 +22,7 @@ const LeaderBoard = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {allUser?.map((user, index) => (
+                    {leaderboardData?.map((user, index) => (
                         <tr key={index}>
                             <td>{user.username}</td>
                             <td>{user.score}</td>

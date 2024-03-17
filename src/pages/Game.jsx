@@ -8,6 +8,8 @@ import Modal from "../Components/Modal";
 
 const Game = () => {
 
+    const isMobileLayout = window.innerWidth < 1060;
+    const token = localStorage.getItem("ExplodingToken");
     const usernameData = localStorage.getItem("ExplodingUsername");
     const scoreData = localStorage.getItem("ExplodingScore");
     const { defuseCards, openedCard, deck, username, score } = useSelector((store) => {
@@ -23,7 +25,8 @@ const Game = () => {
     const [isShuffling, setIsShuffling] = useState(false);
     const Navigate = useNavigate();
     const dispatch = useDispatch();
-    const cards = ["CAT", "DEFUSE", "SHUFFLE", "EXPLODE"];
+    // const cards = ["CAT", "DEFUSE", "SHUFFLE", "EXPLODE"];
+    const cards = ["CAT", "CAT", "CAT", "CAT"];
 
     const [modalVisible, setModalVisible] = useState(false);
     const [modalMessage, setModalMessage] = useState("");
