@@ -25,8 +25,7 @@ const Game = () => {
     const [isShuffling, setIsShuffling] = useState(false);
     const Navigate = useNavigate();
     const dispatch = useDispatch();
-    // const cards = ["CAT", "DEFUSE", "SHUFFLE", "EXPLODE"];
-    const cards = ["CAT", "CAT", "CAT", "CAT"];
+    const cards = ["CAT", "DEFUSE", "SHUFFLE", "EXPLODE"];
 
     const [modalVisible, setModalVisible] = useState(false);
     const [modalMessage, setModalMessage] = useState("");
